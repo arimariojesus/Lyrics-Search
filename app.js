@@ -95,3 +95,13 @@ const handleSongContainerClick = event => {
 }
 
 songsContainer.addEventListener('click', handleSongContainerClick)
+
+function parallax() {
+  var ball = document.querySelector('.disco_ball');
+  var ball_2 = document.querySelector('.disco_ball_2');
+
+  ball.style.top = -(window.pageYOffset / 5) + 'px';
+  ball_2.style.top = -(window.pageYOffset / 1) + 'px';
+}
+
+window.addEventListener('scroll', parallax, false);

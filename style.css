@@ -20,6 +20,45 @@ button {
   cursor: pointer;
 }
 
+.disco_ball {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+.ball {
+  position: absolute;
+}
+
+.ball_1 {
+  width: 200px;
+  top: 350px;
+  left: 50px;
+}
+
+.ball_2 {
+  width: 300px;
+  top: 700px;
+  right: 50px;
+}
+
+.cable {
+  background: #b3b3b3;
+  position: absolute;
+  width: 3px;
+  top: 0;
+}
+
+.cable_1 {
+  height: 360px;
+  left: 150px;
+}
+
+.cable_2 {
+  height: 720px;
+  right: 200px;
+}
+
 button:active {
   transform: scale(0.95);
 }
@@ -33,7 +72,8 @@ header {
   background-image: url('https://images.unsplash.com/photo-1506157786151-b8491531f063?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: center bottom;
+  background-attachment: fixed;
   color: #fff;
   display: flex;
   flex-direction: column;

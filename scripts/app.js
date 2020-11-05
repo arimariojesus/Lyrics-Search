@@ -2,13 +2,12 @@ const form = document.querySelector('#form');
 const searchInput = document.querySelector('#search');
 const songsContainer = document.querySelector('#songs-container');
 const prevAndNextContainer = document.querySelector('#prev-and-next-container');
-const preloader = document.querySelector('#preloader');
 
 const apiURL = `https://api.lyrics.ovh`;
 
-const fetchData = async url => {
-  songsContainer.innerHTML = '';
-  songsContainer.innerHTML = `
+const loader = container => {
+  container.innerHTML = '';
+  container.innerHTML = `
     <li id="preloader">
       <div class="balls">
         <div></div>
@@ -17,6 +16,10 @@ const fetchData = async url => {
       </div>
     </li>
   `;
+}
+
+const fetchData = async url => {
+  loader(songsContainer);
   const response = await fetch(url);
   return await response.json();
 }

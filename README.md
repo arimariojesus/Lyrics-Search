@@ -29,8 +29,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - [x] Estilização "descontraida" (Parallax)
 - [x] Pre-loader ao fazer requisições
-- [] Botão para voltar ao escolher uma letra
-- [] Mobile
+- [ ] Botão para voltar ao escolher uma letra
+- [ ] Mobile
 
 ### ✍ O que eu aprendi ?
 

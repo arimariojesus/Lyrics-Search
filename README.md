@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="Lyrics Search" title="Lyrics Searach" src="./assets/apresentation.gif" width="600px"/>
+  <img alt="Lyrics Search" title="Lyrics Searach" src="./assets/apresentation.gif" width="600px"/><br>
   Lyrics Search
 </h1>
 

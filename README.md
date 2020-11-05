@@ -7,7 +7,7 @@
  <a href="#-Sobre">Sobre</a> •
  <a href="#-Tecnologias">Tecnologias</a> • 
  <a href="#-Features">Features</a> • 
- <a href="#-O-que-eu-aprendi?
+ <a href="#-O-que-eu-aprendi
 ">O que aprendi</a>
 </p>
 

@@ -65,7 +65,7 @@ console.log(name); // 'Moda Verão'
 console.log(cores); // ['azul', 'preto', 'vermelho']
 ```
 
-[*Exemplo no projeto*](https://github.com/arimariojesus/Lyrics-Search/blob/d3a83b76d1c7daff3017701beda83e80461af100/scripts/app.js#L39-L40)
+[*Exemplo no projeto*](https://github.com/arimariojesus/Lyrics-Search/blob/d3a83b76d1c7daff3017701beda83e80461af100/scripts/app.js#L36-L37)
 
 ### Cross-origin resource sharing (CORS)
 
@@ -75,5 +75,5 @@ console.log(cores); // ['azul', 'preto', 'vermelho']
 
 > Este erro pode ser resolvido com a utilização de um Proxy: https://github.com/Rob--W/cors-anywhere
 
-[*Exemplo no projeto*](https://github.com/arimariojesus/Lyrics-Search/blob/d3a83b76d1c7daff3017701beda83e80461af100/scripts/app.js#L28)
+[*Exemplo no projeto*](https://github.com/arimariojesus/Lyrics-Search/blob/d3a83b76d1c7daff3017701beda83e80461af100/scripts/app.js#L25)
 

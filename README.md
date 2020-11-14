@@ -30,7 +30,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [x] Estilização "descontraida" (Parallax)
 - [x] Pre-loader ao fazer requisições
 - [x] Botão para voltar ao escolher uma letra
-- [] Mobile
+- [ ] Mobile
 
 ### ✍ O que eu aprendi ?
 

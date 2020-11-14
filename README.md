@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="Lyrics Search" title="Lyrics Searach" src="./assets/apresentation.gif" width="600px"/>
+  <img alt="Lyrics Search" title="Lyrics Searach" src="./assets/apresentation.gif" width="600px"/><br>
   Lyrics Search
 </h1>
 
@@ -7,8 +7,7 @@
  <a href="#-Sobre">Sobre</a> •
  <a href="#-Tecnologias">Tecnologias</a> • 
  <a href="#-Features">Features</a> • 
- <a href="#-O-que-eu-aprendi?
-">O que aprendi</a>
+ <a href="#-O%20que%20eu%20aprendi%20?">O que aprendi</a>
 </p>
 
 ### 💡 Sobre
@@ -66,7 +65,7 @@ console.log(name); // 'Moda Verão'
 console.log(cores); // ['azul', 'preto', 'vermelho']
 ```
 
-[*Exemplo no projeto*](https://github.com/arimariojesus/Lyrics-Search/blob/d3a83b76d1c7daff3017701beda83e80461af100/scripts/app.js#L39-L40)
+[*Exemplo no projeto*](https://github.com/arimariojesus/Lyrics-Search/blob/d3a83b76d1c7daff3017701beda83e80461af100/scripts/app.js#L36-L37)
 
 ### Cross-origin resource sharing (CORS)
 
@@ -76,5 +75,5 @@ console.log(cores); // ['azul', 'preto', 'vermelho']
 
 > Este erro pode ser resolvido com a utilização de um Proxy: https://github.com/Rob--W/cors-anywhere
 
-[*Exemplo no projeto*](https://github.com/arimariojesus/Lyrics-Search/blob/d3a83b76d1c7daff3017701beda83e80461af100/scripts/app.js#L28)
+[*Exemplo no projeto*](https://github.com/arimariojesus/Lyrics-Search/blob/d3a83b76d1c7daff3017701beda83e80461af100/scripts/app.js#L25)
 

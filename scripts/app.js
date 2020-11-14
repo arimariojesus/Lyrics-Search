@@ -2,6 +2,7 @@ const form = document.querySelector('#form');
 const searchInput = document.querySelector('#search');
 const songsContainer = document.querySelector('#songs-container');
 const prevAndNextContainer = document.querySelector('#prev-and-next-container');
+var lastPageSongs;
 
 const apiURL = `https://api.lyrics.ovh`;
 
@@ -26,6 +27,8 @@ const fetchData = async url => {
 
 const getMoreSongs = async url => {
   const data = await fetchData(`https://cors-anywhere.herokuapp.com/${url}`);
+  lastPageSongs = data;
+  
   insertSongsIntoPage(data);
 }
 
@@ -54,6 +57,7 @@ const insertSongsIntoPage = ({ data, prev, next }) => {
 
 const fetchSongs = async term => {
   const data = await fetchData(`${apiURL}/suggest/${term}`);
+  lastPageSongs = data;
 
   // fetch(`${apiURL}/suggest/${term}`)
   //   .then(response => response.json())
@@ -84,10 +88,11 @@ form.addEventListener('submit', handleFormSubmit)
 const insertLyricsIntoPage = ({ lyrics, artist, songTitle }) => {
   songsContainer.innerHTML = `
   <li class="lyrics-container">
+    <a class='btn-back'><i class="fas fa-long-arrow-alt-left"></i></a>
     <h2><strong>${songTitle}</strong> - ${artist}</h2>
     <p class="lyrics">${lyrics}</p>
   </li>
-`;
+  `;
 }
 
 const fetchLyrics = async (artist, songTitle) => {
@@ -105,6 +110,8 @@ const handleSongContainerClick = event => {
 
     prevAndNextContainer.innerHTML = '';
     fetchLyrics(artist, songTitle);
+  }else if (clickedElement.tagName === 'I') {
+    insertSongsIntoPage(lastPageSongs);
   }
 }
 

@@ -178,10 +178,29 @@ form button {
 
 .lyrics-container {
   color: white;
+  opacity: 1;
+  position: relative;
+}
+
+.lyrics-container h2 {
+  padding-top: 20px;
   opacity: .4;
 }
 
 .lyrics {
   margin-top: 20px;
   line-height: 1.5;
+  opacity: .4;
+}
+
+.btn-back {
+  position: absolute;
+  font-size: 30px;
+  color: #8d56fd;
+  cursor: pointer;
+  top: -30px;
+}
+
+.btn-back:hover {
+  transform: scale(1.2);
 }

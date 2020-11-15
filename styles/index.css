@@ -24,6 +24,15 @@ button {
   position: absolute;
   width: 100%;
   top: 0;
+  display: none;
+}
+
+.down {
+  animation: down 2s ease-out;
+}
+
+.rideUp {
+  animation: rideUp 2s ease-out;
 }
 
 .ball {
@@ -81,6 +90,8 @@ header {
   justify-content: center;
   padding: 100px 0;
   position: relative;
+  height: 100vh;
+  transition: all .4s ease;
 }
 
 header::after {
@@ -142,6 +153,7 @@ form button {
   max-width: 100%;
   width: 500px;
   background-color: #10161B;
+  display: none;
 }
 
 .song {
@@ -203,4 +215,16 @@ form button {
 
 .btn-back:hover {
   transform: scale(1.2);
+}
+
+@keyframes down {
+  from {
+    top: -700%;
+  }
+}
+
+@keyframes rideUp {
+  to {
+    top: -700%;
+  }
 }

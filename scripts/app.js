@@ -1,4 +1,6 @@
+const discoBalls = document.querySelectorAll('.disco_ball');
 const form = document.querySelector('#form');
+const headerElement = document.querySelector('header');
 const searchInput = document.querySelector('#search');
 const songsContainer = document.querySelector('#songs-container');
 const prevAndNextContainer = document.querySelector('#prev-and-next-container');
@@ -71,6 +73,11 @@ const fetchSongs = async term => {
 const handleFormSubmit = event => {
   event.preventDefault();
 
+  takeOut(discoBalls);
+  
+  headerElement.style.height = '340px';
+  songsContainer.style.display = 'block';
+
   const searchTerm = searchInput.value.trim(); // trim() remove os espaços em branco do inicio e fim da string.
   searchInput.value = '';
   searchInput.focus();
@@ -105,12 +112,14 @@ const handleSongContainerClick = event => {
   const clickedElement = event.target;
 
   if (clickedElement.tagName === 'BUTTON') {
+    show(discoBalls);
     const artist = clickedElement.getAttribute('data-artist');
     const songTitle = clickedElement.getAttribute('data-song-title');
 
     prevAndNextContainer.innerHTML = '';
     fetchLyrics(artist, songTitle);
   }else if (clickedElement.tagName === 'I') {
+    takeOut(discoBalls);
     insertSongsIntoPage(lastPageSongs);
   }
 }
@@ -126,3 +135,21 @@ function parallax() {
 }
 
 window.addEventListener('scroll', parallax, false);
+
+const show = nodeElements => {
+  nodeElements.forEach(element => {
+    element.style.display = 'block';
+    element.classList.add('down');
+    element.classList.remove('rideUp');
+  });
+};
+
+const takeOut = nodeElements => {
+  nodeElements.forEach(element => {
+    element.classList.add('rideUp');
+    setTimeout(() => {
+      element.style.display = 'none';
+    },2000);
+    element.classList.remove('down');
+  })
+};

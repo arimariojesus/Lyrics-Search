@@ -67,7 +67,7 @@ console.log(cores); // ['azul', 'preto', 'vermelho']
 
 [*Exemplo no projeto*](https://github.com/arimariojesus/Lyrics-Search/blob/d3a83b76d1c7daff3017701beda83e80461af100/scripts/app.js#L36-L37)
 
-### Cross-origin resource sharing (CORS)
+#### Cross-origin resource sharing (CORS)
 
 - O [CORS](https://youtu.be/GZV-FUdeVwE) é uma especificação do W3C que diz se um determinado recurso pode ou não ser acessado por outros domínios fora do próprio domínio ao qual pertence:
 
